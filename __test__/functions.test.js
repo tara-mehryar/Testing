@@ -39,3 +39,5 @@ describe('Testing for reverseNum function', () => {
         expect(num).toEqual(4321)
     })
 })
+
+import { jest } from '@jest/globals'
