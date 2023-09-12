@@ -41,3 +41,17 @@ describe('Testing for reverseNum function', () => {
 })
 
 import { jest } from '@jest/globals'
+
+jest.unstable_mockModule('lodash',() => {
+    return {
+        default: {
+            random: jest.fn().mockResolvedValue(Math.ceil(Math.random() * 100))
+        }
+    }
+})
+
+import { createArray } from "../functions.js"
+
+describe('Testing for createArray function', () => {
+    
+})
