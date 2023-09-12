@@ -53,5 +53,8 @@ jest.unstable_mockModule('lodash',() => {
 import { createArray } from "../functions.js"
 
 describe('Testing for createArray function', () => {
-    
+    let arr = createArray();
+    test('returns an array', () => {
+        expect(Array.isArray(arr)).toBeTruthy()
+    })
 })
