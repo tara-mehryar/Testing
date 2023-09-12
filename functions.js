@@ -1,7 +1,7 @@
 import lodash from 'lodash';
 
 const capitalize = str => {
-    return str[0].toUpperCase() + str.slice[1]
+    return str[0].toUpperCase() + str.slice(1)
 }
 
 const createObj = (name, age, state, lovesCode) => {
