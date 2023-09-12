@@ -57,4 +57,8 @@ describe('Testing for createArray function', () => {
     test('returns an array', () => {
         expect(Array.isArray(arr)).toBeTruthy()
     })
+
+    test('returns an array with 10 values', () => {
+        expect(arr).toHaveLength(10)
+    })
 })
