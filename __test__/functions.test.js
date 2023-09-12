@@ -61,4 +61,11 @@ describe('Testing for createArray function', () => {
     test('returns an array with 10 values', () => {
         expect(arr).toHaveLength(10)
     })
+
+    test('returns numbers between 1 and 100', () => {
+        for(let i = 0; i < arr.length; i++){
+            expect(arr[i] >= 1).toBeTruthy()
+            expect(arr[i] <= 100).toBeTruthy()
+        }
+    })
 })
